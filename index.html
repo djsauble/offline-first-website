@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <link href="main.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>Offline First <span class="deemphasize">Development</span></h1>
+
+    <p>Internet access is not a universal constant. But we tend
+    to build apps as if it were. Let&rsquo;s address this disconnect.</p>
+
+    <p><a href="#">Offline First App Development</a> is a book about robust
+    apps. Apps which don&rsquo;t curl up and die when you pull the plug. Apps
+    which are just as comfortable online as they are offline. Apps which Just
+    Work&trade;.</p>
+    
+    <p>I assume you already know how to build mobile apps. That&rsquo;s not the
+    point of this book.  My goal is to show how you can start with a 100%
+    offline app (a position of strength and resiliency) and extend it to embrace
+    the power of being online. You will use the following tools and services to
+    achieve this:
+
+    <ul>
+      <li>PouchDB</li>
+      <li>Cloudant</li>
+      <li>Sencha Touch</li>
+      <li>Cordova</li>
+    </ul>
+    </p>
+
+    <p>Designing for the worst case scenario is not a new concept, but it is
+    often overlooked. The happy path is built first. Only then are exceptional
+    cirumstances considered, often resulting in a major refactor or rewrite. An
+    offline first approach is only one of many choices. You can design for
+    security first, mobile first, accessibility first, or performance first.</p>
+
+    <p>Offline just happens to be an area which affects everyone in a big way,
+    so it&rsquo;s a reasonable place to start. I encourage you to explore those
+    other approaches as well.</p>
+
+    <p>Any book is a commitment. Here are some of the things you will learn from
+    this book.
+
+    <ul>
+      <li>Learn how to use common libraries to enhance the offline experience of
+      mobile apps.</li>
+      <li>Understand the design principles behind a well-designed offline
+      experience.</li>
+      <li>Learn how to design empty states and errors that inform, not confuse.
+      </li>
+      <li>Learn how to create the illusion of being online when you’re really
+      offline.</li>
+      <li>Learn how to build user trust by being transparent and setting good
+      expectations.</li>
+      <li>Learn how to make an application adjust gracefully to changing network
+      conditions.</li>
+      <li>Understand the problem of split-brain, and how to minimize its effects
+      while offline.</li>
+      <li>Learn how to pick an appropriate caching strategy based on your user
+      scenarios.</li>
+      <li>Learn about the current state of peer-to-peer networking on mobile
+      devices.</li>
+    </ul>
+    </p>
+
+    <p>You may assume that this is a problem only fringe apps exhibit. This is
+    not the case. Open Pinterest or Apple Maps. These are popular apps with
+    terrible offline experiences. Data is not cached, error messages are
+    ambiguous, and inconsistencies abound.</p>
+    
+    <p>This book is design focused. You must care about the people for which you
+    are crafting an experience. Once you have empathy, you can focus on the
+    right problems to solve.</p>
+    
+    <p>Unlike typical design books, which inspire but don&rsquo;t follow through
+    with application, this book does both. You will write an app which applies
+    what you learn about offline design. Or apply the lessons to your own
+    applications immediately. Your choice.</p>
+
+    <p>As you think about offline first development, a useful analogy is the
+    bunker and the beach house. An offline app is like a hardened bunker,
+    functional but isolated. An online app is like a beach house, open but
+    vulnerable. You can combine these two approaches while retaining the
+    strengths of each.</p>
+
+    <p>The problem is that most developers build the beach house first. Often,
+    retrofitting a bunker is not simple. You end up building a bunker, then
+    rebuilding the beach house on top of it. Our strategy is the opposite.</p>
+
+    <p>You start by building a fully-functional, but offline version of a todo
+    app. Each chapter, I&rsquo;ll introduce a new concept which gradually makes
+    the app a first-class online citizen. However, because you start at a robust
+    starting point, it&rsquo;s much easier to ensure that you retain that solid
+    foundation.</p>
+
+    <p>This raises an interesting question. How do you measure robustness? There
+    isn&rsquo;t a single metric to answer this question. Instead, you&rsquo; use
+    a set of 10 principles of good offline design, and measure the app against
+    these at regular intervals. The principles are as follows:
+
+    <ol>
+      <li>Content is mutable. Don&rsquo;t let my online/offline status change that.
+      </li>
+      <li>Error messages should not leave me guessing or unnecessarily worried.
+      </li>
+      <li>Don&rsquo;t let me start something I can&rsquo;t finish.</li>
+      <li>An app should never contradict itself. If a conflict exists, be honest
+      about it.</li>
+      <li>When laws of physics prevail, choose breadth over depth when
+      caching.</li>
+      <li>Empty states should tell me what to do next in a delightful way.</li>
+      <li>Don&rsquo;t make me remember what I was doing last. Remember for me.</li>
+      <li>Degrade gracefully as the network degrades. Don&rsquo;t be jarring.</li>
+      <li>Never purge the cache unless I demand it.</li>
+    </ol>
+    </p>
+  </body>
+</html>

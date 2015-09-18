@@ -1,0 +1,68 @@
+@font-face {
+  font-family: FontAwesome;
+  src: url("fonts/FontAwesome.otf");
+}
+
+@font-face {
+  font-family: Concourse;
+  src: url("fonts/Concourse T3 Regular.otf");
+}
+
+body {
+  font-family: Calisto MT, Helvetica, serif;
+  line-height: 1.5;
+  font-size: 1.2em;
+  background-color: #F8F8F8;
+  color: #333333;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+/**
+ * Typography
+ */
+
+h1, h2, h3 {
+  font-weight: 100;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-family: Concourse, sans-serif;
+  font-size: 3.6em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+small {
+  font-size: 0.7em;
+}
+
+a {
+  color: #6E59E2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #A099CA;
+}
+
+a:visited {
+  color: #5B5192;
+}
+
+.deemphasize {
+  color: #AAAAAA;
+}
