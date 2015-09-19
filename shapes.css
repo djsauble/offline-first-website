@@ -75,34 +75,36 @@
  */
 
 .laptop {
-  background-color: #333333;
-  border-radius: 50px;
-  height: 30px;
-  width: 30px;
+  background-color: #474747;
+  border-radius: 40px;
+  height: 60px;
+  width: 60px;
   position: absolute;
-  right: 190px;
+  right: 240px;
+  border: #333333 solid 7px;
+  z-index: 10;
 }
 
 .laptop:before {
   content: "";
   background-color: #333333;
-  width: 8px;
-  height: 230px;
+  width: 28px;
+  height: 480px;
   position: absolute;
-  top: -225px;
-  transform: rotate(-12deg);
-  left: -17px;
+  top: -467px;
+  transform: rotate(18deg);
+  left: 100px;
 }
 
 .laptop:after {
   content: "";
   background-color: #333333;
-  width: 200px;
-  height: 17px;
+  width: 290px;
+  height: 37px;
   position: absolute;
   transform: rotate(2deg);
-  top: 10px;
-  left: 27px;
+  top: 17px;
+  left: 60px;
 }
 
 /**
