@@ -1,9 +1,13 @@
+/**
+ * Ethernet plug
+ */
+
 .ethernet {
   width: 120px;
   height: 50px;
   background: #333333;
   position: absolute;
-  right: 220px;
+  right: 190px;
   top: 77px;
 }
 
@@ -29,4 +33,115 @@
   border-bottom: 10px solid #333333;
   border-right: 10px solid #333333;
   border-bottom-right-radius: 50px;
+}
+
+/**
+ * Ethernet port
+ */
+
+.wall {
+  width: 280px;
+  height: 500px;
+  background: #333333;
+  position: absolute;
+  left: 0;
+  top: 20em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.wall:before {
+  content: "";
+  background-color: #F8F8F8;
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top: 220px;
+  left: 88px;
+}
+
+.wall:after {
+  content: "";
+  background-color: #F8F8F8;
+  width: 30px;
+  height: 18px;
+  position: absolute;
+  top: 260px;
+  left: 103px;
+}
+
+/**
+ * Laptop
+ */
+
+.laptop {
+  background-color: #333333;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 190px;
+}
+
+.laptop:before {
+  content: "";
+  background-color: #333333;
+  width: 8px;
+  height: 230px;
+  position: absolute;
+  top: -225px;
+  transform: rotate(-12deg);
+  left: -17px;
+}
+
+.laptop:after {
+  content: "";
+  background-color: #333333;
+  width: 200px;
+  height: 17px;
+  position: absolute;
+  transform: rotate(2deg);
+  top: 10px;
+  left: 27px;
+}
+
+/**
+ * iPhone
+ */
+
+.iphone {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  border-color: #333333;
+  border-style: solid;
+  border-width: 50px 5px 50px 5px;
+  left: 50px;
+  background-color: #000000;
+  top: 1760px;
+}
+
+.iphone:before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  top: -26px;
+  left: 85px;
+  border: solid 1px #5A5A5A;
+}
+
+.iphone:after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  top: 309px;
+  left: 85px;
+  border: 1px solid #5A5A5A;
 }
