@@ -94,6 +94,7 @@
   top: -467px;
   transform: rotate(18deg);
   left: 100px;
+  border-top-left-radius: 12px;
 }
 
 .laptop:after {
