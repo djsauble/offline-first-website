@@ -1,0 +1,32 @@
+.ethernet {
+  width: 120px;
+  height: 50px;
+  background: #333333;
+  position: absolute;
+  right: 220px;
+  top: 77px;
+}
+
+.ethernet:before {
+  content:"";
+  position: absolute;
+  right: 9px;
+  top: -15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #333333;
+  border-right: 111px solid #333333;
+  transform: rotate(-15deg);
+}
+
+.ethernet:after {
+  content: "";
+  position: absolute;
+  right: -140px;
+  top: -77px;
+  width: 130px;
+  height: 98px;
+  border-bottom: 10px solid #333333;
+  border-right: 10px solid #333333;
+  border-bottom-right-radius: 50px;
+}
