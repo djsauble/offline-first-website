@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <link href="shapes.css" type="text/css" rel="stylesheet"/>
+    <link href="main.css" type="text/css" rel="stylesheet"/>
+    <title>Refining Details</title>
+  </head>
+  <body>
+    <h1>Refining <span class="deemphasize">Details</span></h1>
+
+    <p>A natural inclination of designers is to make things look
+    &ldquo;pretty&rdquo;. This is not a bad urge. The problem is when we spend
+    time refining a solution which is fundamentally wrong. When you browse
+    Dribbble, you notice lots of lovely things, but they are often missing a
+    purpose or failing to meet a need.</p>
+
+    <p>However, when you finally build something worthwhile, you&rsquo;ll want
+    to turn it from an ugly duckling into a swan. And that&rsquo;s the right
+    order of things.</p>
+
+    <p>In late 2014, I joined Sonatype as a UX developer. They were in the
+    middle of the next major version of Nexus, a repository management tool for
+    developers. Nexus is a tool used by tens of thousands of people. It is a
+    fantastic tool that is fundamental to how development is done. When I
+    started, it looked something like this:</p>
+
+    <img src="nexus_m2.png" alt="Nexus 3 Milestone 2"/>
+    <figure>Nexus 3 Milestone 2</figure>
+
+    <p>This is a perfect example of valuable tool, ugly duckling. As a designer
+    and front-end developer, this was a perfect opportunity to give Nexus a
+    visual makeover and make it easier to use at the same time.</p>
+
+    <h2>Styling improvements</h2>
+
+    <p>By the time Nexus 3 was released, it looked like this:</p>
+
+    <img src="nexus_m5.png" alt="Nexus 3 GA"/>
+
+    <p>To get it to this point, I made a number of refinements. First, I
+    shifted the colors to draw the eye to the most relevant part of the
+    interface. White is a bright color, and I reserved it for the header and
+    content area of the selected feature. Other areas of the interface received
+    darker shades of grey to deemphasize them.</p>
+
+    <p>Next, I removed the border underneath the feature icon and title to
+    reflect the way the tool scrolls. In a typical grid view, the icon, title,
+    action buttons, and filter input are fixed to the top. The grid scrolls. To
+    make this relationship clearer, I gave the aforementioned elements a shared
+    white background.</p>
+
+    <p>The header received the next batch of changes. The active mode is
+    indicated by a blue background. Because the active mode is such an
+    important visual clue for orientation, I made it full bleed in the header.
+    I also tied it to the rest of the page by adding a caret.</p>
+
+    <p>In addition, I revised the header icons from grey to white. This boosted
+    contrast and gave the modes more pop. Finally, I aligned the version number
+    with the baseline of the header title to make the overall effect more
+    cohesive.</p>
+
+    <p>With respect to the content area itself, you might notice that M2 had
+    significantly more buttons above the grid. All of these buttons, save one,
+    require that a grid row be selected first. To simplify the UI and make this
+    relationship clearer, I removed the buttons from this view and added them
+    to the detail panel that appears when a row is selected.</p>
+
+    <p>Typography played another key role in the improvements. First, we
+    updated the font itself to Proxima Nova, used in our other products. Then,
+    we boosted the size of the feature title to help orient people.</p>
+
+    <p>The last thing you might notice is the right-hand carets, one per row in
+    the grid. These were added as an affordance to hint at the result of
+    clicking a row in the grid. I&rsquo;ll describe this drilldown interaction
+    more thoroughly in the next section.</p>
+
+    <h2>Replace modals with drilldown</h2>
+
+    <p>Modals are often a case of lazy design. A common scenario is when you want to enforce a linear workflow. In M2, we used them extensively. One of my goals was to replace modals with a better-designed alternative.</p>
+
+    <p>The alternative I chose is something I call &ldquo;drilldown&rdquo;.
+    Instead of a modal, when you make a selection, the panel slides to the left
+    and your selection slides in from the right. It includes a breadcrumb, so
+    you can easily navigate back, and supports multiple levels of drilldown.
+    This is handy when designing a wizard that consists of multiple steps.</p>
+
+  </body>
+</html>
